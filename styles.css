@@ -1,0 +1,21 @@
+body {
+background-color: #392C1E;
+}
+
+.container-fluid {
+  background-color: rgba(57, 44, 30, 0.7);
+}
+
+.nav-item {
+  font-family: 'Montserrat';
+
+ 
+}
+
+
+.img-responsive {
+
+  border-radius: 50px;
+  
+
+}
