@@ -8,14 +8,23 @@ background-color: #392C1E;
 
 .nav-item {
   font-family: 'Montserrat';
-
- 
 }
 
+.nav-link {
+color: #B6AC97; 
+}
 
 .img-responsive {
-
   border-radius: 50px;
-  
+}
 
+.login {
+  background-color: #D9D9D9;
+  color: #392C1E;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: large;
+  
 }
