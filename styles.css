@@ -7,7 +7,7 @@ background-color: #392C1E;
 }
 
 .nav-item {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav-link {
@@ -21,11 +21,10 @@ color: #B6AC97;
 .login {
   background-color: #D9D9D9;
   color: #392C1E;
-  padding: 10px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: large;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  
 }
   
 .bg-image {
@@ -63,3 +62,59 @@ h2 h3 {
   background-color: rgba(57, 44, 30, 0.7);
   
 }
+
+.gallery .caption {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(57, 44, 30, 0.7);
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.gallery:hover .caption {
+  display: block;
+}
+
+.img-fluid {
+
+  border-radius: 10px;
+}
+
+.btn-custom {
+
+  background-color: #D9D9D9;
+  color: #392C1E;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  padding: auto;
+  top: 0px;
+  background-color: #B6AC97;
+  max-width: none;
+  margin: 0;
+
+}
+
+
+footer {
+font-family: 'Hind Madurai', sans-serif;
+text-align: center;
+
+}
+
+h4 {
+font-weight: bold;
+text-align: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
