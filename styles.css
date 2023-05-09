@@ -129,7 +129,6 @@ justify-content: space-between;
 
 }
 
-
 .container {
   padding: auto;
   top: 0px;
@@ -210,19 +209,14 @@ color:#392C1E;
 }
 
 
-.container {
-  padding: auto;
-  top: 0px;
-  background-color: #B6AC97;
-  max-width: none;
-  margin: 0;
-}
+
 
 footer {
 font-family: 'Hind Madurai', sans-serif;
 text-align: center;
 
 }
+
 
 h4 {
 font-weight: bold;

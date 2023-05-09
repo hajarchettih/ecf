@@ -1,0 +1,108 @@
+body {
+  background-color: #D9D9D9;
+}
+
+.img-responsive {
+border-radius: 50%;
+}
+
+.text-center {
+
+    background-color:rgba(57, 44, 30, 0.7);
+    color:#D9D9D9;
+    margin: 0 auto; 
+    font-family: 'Hind Madurai', sans-serif;
+  }
+  @media screen and (max-width: 768px) {
+    .text-center {
+      width: 90%; 
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .text-center {
+      width: 90%; 
+      height: auto;
+    }
+  }
+
+  label {
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding-top: 20px;
+    
+  }
+  
+  input,label {
+    margin: 0.4rem 0;
+    font-family: 'Hind Madurai', sans-serif;
+ 
+  }
+
+  .btn-custom {
+    background-color:#B6AC97;
+    color:#D9D9D9;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  
+  }
+
+  .btn-custom:hover {
+    background-color:#D9D9D9;
+    color:#392C1E;
+    }
+
+    .btn-custom2 {
+      background-color: #B6AC97;
+      color: #D9D9D9;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      margin-left: 80%;
+      margin-top: 10px;
+    }
+    
+    @media (max-width: 768px) {
+      .btn-custom2 {
+        margin-left: 0%;
+      }
+    }
+  
+
+  .new {
+  text-align: center;
+  font-family: 'Hind Madurai', sans-serif;
+  
+  }
+
+  span {
+    text-decoration: underline;
+  }
+
+  .mdp {
+    text-decoration: underline;
+  }
+
+
+  footer {
+    font-family: 'Hind Madurai', sans-serif;
+    text-align: center;
+    color: #392C1E;
+    
+    }
+
+  h1 {
+    font-weight: 'Montserrat', sans-serif;
+     text-align: center;
+     color: #392C1E;
+    }
+    
+    h4 {
+    font-weight: bold;
+    text-align: center;
+    }
+    
+    ul li {
+      list-style-type: none;
+    }
+    
