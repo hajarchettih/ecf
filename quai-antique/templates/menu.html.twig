@@ -1,0 +1,30 @@
+{# Utilisation d'un tableau associatif #}
+{% set menu = {
+'title': 'MENU DU MARCHE',
+'dinner': {
+'title': 'Formule Diner',
+'days': 'du lundi au vendredi',
+'options': 'Entrée + plat + dessert 50€ (sauf burger)',
+},
+'lunch': {
+'title': 'Formule Déjeuner',
+'days': 'Le midi du lundi au vendredi',
+'options': 'Entrée + plat ou plat + dessert 25, 00 € (sauf burger)',
+},
+} %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="mt-5 text-center">{{ menu.title }}</h2>
+      <div class="h3 text-center">
+        {{ menu.dinner.title }}<br>
+        ({{ menu.dinner.days }})<br>
+        {{ menu.dinner.options }}<br>
+        <br>
+        {{ menu.lunch.title }}<br>
+        ({{ menu.lunch.days }})<br>
+        {{ menu.lunch.options }}
+      </div>
+    </div>
+  </div>
+</div>

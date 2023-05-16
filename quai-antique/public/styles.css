@@ -1,0 +1,228 @@
+body {
+  background-color: #392C1E;
+  }
+
+.containermap {
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.map,.contact {
+  background-color: #D9D9D9;
+  color:#392C1E;
+  height: auto; 
+  width: auto; 
+  margin: 0 auto; 
+  font-family: 'Lora', serif;
+}
+
+
+label {
+  font-family: 'Lora', serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+input,label {
+  margin: 0.4rem 0;
+  
+}
+
+#email {
+  width: 500px; 
+  max-width: 100%; 
+}
+
+#story {
+
+  width: 500px; 
+  max-width: 300%; 
+}
+
+@media (max-width:768px) {
+#story {
+width: 90%;
+  }
+}
+
+.return {
+
+text-align:right;
+padding: 50px;
+
+}
+
+.container-fluid {
+  background-color: rgba(57, 44, 30, 0.7);
+}
+
+.nav-item {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+color: #B6AC97; 
+}
+
+.img-responsive {
+  border-radius: 50px;
+}
+
+.login {
+  background-color: #D9D9D9;
+  color: #392C1E;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
+    .btn-login {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  @media screen and (min-width: 992px) {
+    .nav-item-login {
+      display: none;
+    }
+  }
+  
+}
+
+  
+.bg-image {
+  background-image: url("./ressources/magnifique-salle-italienne-peintures-mur.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 40%
+}
+
+.content {
+  position: absolute;
+  top: 80%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #D9D9D9;
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
+  font-size: 20%;
+  text-shadow: #392C1E 2px 5px;
+  
+}
+
+@media screen and (max-width: 576px) {
+  .content {
+    font-size: 2rem;
+    top: 80%; 
+  }
+}
+
+
+.py-1 {
+display: flex;
+justify-content: space-between;
+
+}
+
+.container {
+  padding: auto;
+  top: 0px;
+  background-color: #B6AC97;
+  max-width: none;
+  margin: 0;
+
+}
+
+
+h2 h3 {
+
+  font-family: 'Hind Madurai', sans-serif;
+  color: #392C1E;
+}
+
+.gallery {
+  background-color: rgba(57, 44, 30, 0.7);
+  height: auto; 
+  width: 100%; 
+
+}
+
+.caption {
+  display: none; 
+  position: absolute; 
+  color: #D9D9D9;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  
+}
+
+.gallery img:hover + .caption {
+  display: block; 
+}
+
+
+.img-fluid {
+
+  border-radius: 10px;
+}
+
+
+.btn-custom {
+
+  background-color: #D9D9D9;
+  color: #392C1E;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+.btn-custom3 {
+  background-color: #D9D9D9;
+  color: #392C1E;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+
+}
+
+.btn-custom:hover {
+background-color: #B6AC97;
+color:#392C1E;
+}
+
+
+.btn-custom2 {
+  
+  background-color: #392C1E;
+  color: #B6AC97;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.btn-custom2:hover {
+  background-color: #B6AC97;
+  color:#D9D9D9;
+}
+
+
+
+
+footer {
+font-family: 'Hind Madurai', sans-serif;
+text-align: center;
+
+}
+
+
+h4 {
+font-weight: bold;
+text-align: center;
+}
+
+ul li {
+  list-style-type: none;
+}
