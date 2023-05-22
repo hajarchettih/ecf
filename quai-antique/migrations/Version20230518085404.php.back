@@ -1,0 +1,53 @@
+<?php
+
+declare(strict_types=1);
+
+namespace DoctrineMigrations;
+
+use Doctrine\DBAL\Schema\Schema;
+use Doctrine\Migrations\AbstractMigration;
+
+/**
+ * Auto-generated Migration: Please modify to your needs!
+ */
+final class Version20230518085404 extends AbstractMigration
+{
+    public function getDescription(): string
+    {
+        return '';
+    }
+
+    public function up(Schema $schema): void
+    {
+        // this up() migration is auto-generated, please modify it to your needs
+        $this->addSql('CREATE TABLE admin_galerie_photo (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, many_to_one VARCHAR(255) NOT NULL)');
+        $this->addSql('CREATE TABLE admin_gestion_reservation (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, reservation INTEGER NOT NULL, client INTEGER NOT NULL, date_reservation DATE NOT NULL, heure_reservation DATE NOT NULL, nomre_personne INTEGER NOT NULL, telephone_client INTEGER NOT NULL, statut VARCHAR(255) NOT NULL, modifier_ou_supprimer_les_entrees VARCHAR(255) NOT NULL)');
+        $this->addSql('CREATE TABLE admincarte (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, entrées VARCHAR(255) DEFAULT NULL, description VARCHAR(255) DEFAULT NULL, prix INTEGER DEFAULT NULL)');
+        $this->addSql('CREATE TABLE administrateur (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, one_to_one VARCHAR(255) NOT NULL, menu VARCHAR(255) NOT NULL, carte VARCHAR(255) NOT NULL, horaires VARCHAR(255) NOT NULL)');
+        $this->addSql('CREATE TABLE allergie (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, user INTEGER NOT NULL, name_allergie CLOB NOT NULL)');
+        $this->addSql('CREATE TABLE client (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nom VARCHAR(50) NOT NULL, prenom VARCHAR(50) NOT NULL, email VARCHAR(100) NOT NULL, mot_de_passe VARCHAR(50) NOT NULL)');
+        $this->addSql('CREATE TABLE contact (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, client INTEGER NOT NULL, message CLOB NOT NULL, date_envoi DATETIME NOT NULL)');
+        $this->addSql('CREATE TABLE convive (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, client INTEGER NOT NULL, nom VARCHAR(50) NOT NULL, prenom VARCHAR(50) NOT NULL, allergie CLOB NOT NULL)');
+        $this->addSql('CREATE TABLE horaire (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, jour_semaine VARCHAR(255) NOT NULL, heure_ouverture TIME NOT NULL, heure_fermeture TIME NOT NULL)');
+        $this->addSql('CREATE TABLE mot_de_passe_oublie (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, email VARCHAR(50) NOT NULL, string VARCHAR(50) NOT NULL, date_creation DATETIME NOT NULL)');
+        $this->addSql('CREATE TABLE parametre (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, client VARCHAR(255) NOT NULL, mot_de_passe_actuel VARCHAR(20) NOT NULL, confirmation_mot_de_passe VARCHAR(20) NOT NULL, email_actuel VARCHAR(50) NOT NULL, nouvel_email VARCHAR(50) NOT NULL)');
+        $this->addSql('CREATE TABLE reservation (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, int INTEGER NOT NULL, email VARCHAR(50) NOT NULL, date_reservation DATE NOT NULL, heure_reservation TIME NOT NULL, nombre_personne INTEGER NOT NULL, telephone_client VARCHAR(15) NOT NULL, allergie CLOB DEFAULT NULL)');
+    }
+
+    public function down(Schema $schema): void
+    {
+        // this down() migration is auto-generated, please modify it to your needs
+        $this->addSql('DROP TABLE admin_galerie_photo');
+        $this->addSql('DROP TABLE admin_gestion_reservation');
+        $this->addSql('DROP TABLE admincarte');
+        $this->addSql('DROP TABLE administrateur');
+        $this->addSql('DROP TABLE allergie');
+        $this->addSql('DROP TABLE client');
+        $this->addSql('DROP TABLE contact');
+        $this->addSql('DROP TABLE convive');
+        $this->addSql('DROP TABLE horaire');
+        $this->addSql('DROP TABLE mot_de_passe_oublie');
+        $this->addSql('DROP TABLE parametre');
+        $this->addSql('DROP TABLE reservation');
+    }
+}
